@@ -1,18 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from "react-responsive";
 import { api } from '../../services/api';
-
 import { useNavigate } from 'react-router-dom';
 import { RxCaretLeft } from "react-icons/rx";
-
 import { Container, Content } from "./styles";
-
-import { Menu } from "../../components/Menu";
-import { Header } from "../../components/Header";
-import { ButtonText } from "../../components/Buttontext";
+import { Menu } from '../../components/Menu';
+import { Header } from '../../components/Header';
+import { ButtonText } from '../../components/Buttontext';
 import { Favorite } from '../../components/Favorite';
 import { Footer } from '../../components/Footer';
-
 export function Favorites({ isAdmin }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 

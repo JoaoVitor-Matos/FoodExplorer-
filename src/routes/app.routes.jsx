@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import { New } from "../pages/New";
-import { Edit } from "../pages/Edit";
-import { Home } from "../pages/home";
-import { Dish } from "../pages/Dish";
-import { Favorites } from "../pages/Favorites";
+import { New } from '../pages/New';
+import { Edit } from '../pages/Edit';
+import { Home } from '../pages/home';
+import { Dish } from '../pages/Dish';
+import { Favorites } from '../pages/Favorites';
 
 export function AppRoutes({ isAdmin }) {
   const commonProps = { isAdmin };
