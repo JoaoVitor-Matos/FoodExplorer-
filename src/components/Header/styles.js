@@ -26,7 +26,7 @@ export const Container = styled.header`
     .favorites {
       border: 0;
       background: none;
-
+      cursor: pointer;
       line-height: 100%;
 
       color: ${({ theme }) => theme.COLORS.GRAY_200};
@@ -63,6 +63,7 @@ export const Brand = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   > img {
     width: 16.1rem;
@@ -80,7 +81,7 @@ export const Brand = styled.div`
 export const Logout = styled.button`
   border: none;
   background: none;
-
+  cursor: pointer;
   display: flex;
   align-items: center;
   

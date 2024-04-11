@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 1.3rem;
-
+  
   padding: 1.6rem 0;
 
   > img {
@@ -25,12 +25,12 @@ export const Container = styled.div`
     button {
       border: 0;
       background: none;
-
+      
       font-size: 1.2rem;
       line-height: 160%;
 
       color: ${({ theme }) => theme.COLORS.LIGHT_RED};
-      cursor: pointer; 
+      cursor: pointer;
     }
   }
 

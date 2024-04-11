@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   margin-inline: 5.6rem;
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 7.3rem;
-
+  
   @media (min-width: 1024px) {
     margin-inline: 13.1rem;
 
@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const Brand = styled.div`
   display: flex;
   justify-content: center;
-
+  
   width: 100%;
   margin-inline: auto;
 
@@ -46,7 +46,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-
+  
   > h2 {
     display: none;
   }
@@ -72,7 +72,7 @@ export const Form = styled.form`
     font-family: "Poppins", sans-serif;
     font-size: 1.4rem;
     line-height: 2rem;
-
+    
     &:focus {
       outline: none;
       box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.COLORS.PRIMARY};

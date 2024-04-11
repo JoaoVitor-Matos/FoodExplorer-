@@ -74,7 +74,7 @@ export const Container = styled.div`
   @media (min-width: 1024px) {
     height: 100vh;
     grid-template-rows: 9.6rem auto 7.7rem;
-
+    
     > main {
       overflow-y: auto;
 
@@ -94,7 +94,7 @@ export const Container = styled.div`
         header {
           height: 26rem;
           margin-inline: 0.1rem;
-
+          
           border-radius: 0.8rem;
 
           img {
@@ -130,7 +130,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-
+  
   margin-top: 6.2rem;
 
   section > h2 {

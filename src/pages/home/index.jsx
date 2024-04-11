@@ -2,18 +2,14 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from "react-responsive";
 import { Container, Content } from "./styles";
-
 import { api } from '../../services/api';
-
 import { Menu } from "../../components/Menu";
 import { Header } from '../../components/Header';
 import { Section } from '../../components/Section';
 import { Food } from "../../components/Food";
 import { Footer } from '../../components/Footer';
-
 import bannerMobile from "../../assets/banner-mobile.png";
 import homeBanner from "../../assets/home-banner.png";
-
 import { register } from 'swiper/element/bundle';
 
 register();
@@ -30,22 +26,21 @@ export function Home({ isAdmin, user_id }) {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5 // the value in percentage indicates at what visibility the callback should be called
+      threshold: 0.5 
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // If the element is visible, start the Swiper autoplay if the ref is not null
           entry.target.swiper && entry.target.swiper.autoplay.start();
         } else {
-          // If the element is not visible, stop the Swiper autoplay if the ref is not null
+          
           entry.target.swiper && entry.target.swiper.autoplay.stop();
         }        
       });
     }, options);
 
-    // Observe the visibility changes of elements containing Swiper
+  
     observer.observe(swiperElRef1.current);
     observer.observe(swiperElRef2.current);
     observer.observe(swiperElRef3.current);
@@ -134,7 +129,7 @@ export function Home({ isAdmin, user_id }) {
           <header>
             <img 
               src={isDesktop ? homeBanner : bannerMobile} 
-              alt="Macarons coloridos em tons pastel despencando juntamente com folhas verdes e frutas frescas." 
+              alt="Macarons coloridos." 
             />
           
             <div>
