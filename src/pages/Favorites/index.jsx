@@ -9,6 +9,9 @@ import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/Buttontext';
 import { Favorite } from '../../components/Favorite';
 import { Footer } from '../../components/Footer';
+
+
+
 export function Favorites({ isAdmin }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 

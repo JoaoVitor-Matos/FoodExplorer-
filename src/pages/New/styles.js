@@ -27,12 +27,17 @@ export const Container = styled.div`
     padding: 0.8rem;
     border-radius: 0.8rem;
     
+    
     &:focus-within {
       outline: 1px solid ${({ theme }) => theme.COLORS.WHITE};
+      
     }
 
     input {
-      background-color: transparent;
+      background-color: transparent ;
+      border: none;
+      color: ${({ theme }) => theme.COLORS.WHITE};
+      outline: none;
     }
   }
 
