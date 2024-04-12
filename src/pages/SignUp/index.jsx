@@ -84,7 +84,7 @@ export function SignUp() {
         <Section title="Email">
           <Input
             name="email"
-            placeholder="seuemail@exemplo.com"
+            placeholder="joaovitor@exemplo.com"
             type="text"
             value={formData.email}
             onChange={handleChange}
