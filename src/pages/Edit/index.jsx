@@ -46,7 +46,7 @@ export function Edit({ isAdmin }) {
       }
     }
 
-    fetchDish();
+   // fetchDish();
   }, [params.id]);
 
   useEffect(() => {

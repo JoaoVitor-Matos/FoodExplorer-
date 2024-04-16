@@ -34,9 +34,8 @@ export function Favorites({ isAdmin }) {
       }
     };
   
-    fetchFavorites();
+    //fetchFavorites();
   }, []);  
-
   const removeFavorite = async (dishId) => {
     try {
       await api.delete(`/favorites/${dishId}`);
@@ -66,6 +65,7 @@ export function Favorites({ isAdmin }) {
       />
 
       {
+        
         favorites && 
         <main>
           <div>
